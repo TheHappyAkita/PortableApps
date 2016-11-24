@@ -1,4 +1,7 @@
 echo off 
+
+SET TMP_APP_FOLDER=IntelliJ_2016.3.0
+
 SET USERPROFILE=%~dp0\..\Data\USERPROFILE
 SET HOMEPATH=%~p0\..\Data\USERPROFILE
 SET HOMEDRIVE=%~d0
@@ -10,6 +13,6 @@ if exist "%PA_JAVA_DIR%\bin\javaw.exe" (
   set "PATH=%JAVA_HOME%;%PATH%"
 ) 
 
-cd %~dp0/IntelliJ_2016.2.5
+cd %~dp0/%TMP_APP_FOLDER%
 start .\bin\idea.exe
 rem start .\bin\idea64.exe
