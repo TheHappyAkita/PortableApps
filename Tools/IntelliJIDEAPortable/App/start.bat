@@ -21,7 +21,6 @@ if exist "%PA_JAVA_DIR%\bin\javaw.exe" (
   set "TMP_JAVA_HOME=%PA_JAVA_DIR%"
 )
 
-
 rem ##### resolve relative paths and set environment #####
 pushd "%TMP_USERPROFILE%"
 set USERPROFILE=%CD%
